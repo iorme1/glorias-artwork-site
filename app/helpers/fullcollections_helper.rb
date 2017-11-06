@@ -1,0 +1,2 @@
+module FullcollectionsHelper
+end

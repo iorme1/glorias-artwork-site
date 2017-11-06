@@ -12,6 +12,7 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
+gem 'sweetalert-rails'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'bootswatch-rails'
