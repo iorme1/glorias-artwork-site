@@ -4,4 +4,5 @@ class FullcollectionsController < ApplicationController
 
   def show
   end
+
 end

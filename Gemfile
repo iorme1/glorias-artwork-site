@@ -23,6 +23,7 @@ gem 'jquery-rails'
 
 gem 'bootstrap'
 gem 'figaro'
+gem 'carrierwave', '~> 1.0'
 
 group :development, :test do
   gem 'byebug'
