@@ -1,0 +1,11 @@
+<%= form_for @image do |f| %>
+  <%= f.file_field :image %>
+
+  <%= f.label :title %>
+  <%= f.text_area :title %>
+
+  <%= f.label :date %>
+  <%= f.date_field :date %>
+
+  <%= f.submit "Save" %>
+<% end %>

@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all'  %>
   <%= stylesheet_link_tag    'welcome', media: 'all' %>
   <%= stylesheet_link_tag    'fullcollections', media: 'all' %>
+  <%= stylesheet_link_tag    'images', media: 'all' %>
   <%= javascript_include_tag 'application'  %>
   <%= csrf_meta_tags %>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -19,7 +20,7 @@
     <div class="navbar-header">
       <%= link_to "Home", root_path, class: "navbar-brand"  %>
       <%= link_to "Recent Artwork", welcome_index_path, class: "navbar-brand"  %>
-      <%= link_to "Full Collection", fullcollections_index_path, class: "navbar-brand"  %>
+      <%= link_to "Full Collection", images_path, class: "navbar-brand"  %>
     </div>
     <div class="container">
       <ul class="nav navbar-nav pull-right">

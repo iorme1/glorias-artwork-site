@@ -24,6 +24,8 @@ gem 'jquery-rails'
 gem 'bootstrap'
 gem 'figaro'
 gem 'carrierwave', '~> 1.0'
+gem "mini_magick"
+gem "fog-aws"
 
 group :development, :test do
   gem 'byebug'
