@@ -26,6 +26,8 @@ $(document).ready(function() {
     }
   }
 
-  panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-  panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+  panels.forEach(function(panel){
+    panel.addEventListener('click', toggleOpen);
+    panel.addEventListener('transitionend', toggleActive);
+  });
 });
