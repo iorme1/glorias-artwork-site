@@ -2,7 +2,14 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
-   #include CarrierWave::MiniMagick
+   include CarrierWave::MiniMagick
+
+   def auto_orient
+    manipulate! do |img|
+      img.auto_orient
+      img
+    end
+  end
 
   # Choose what kind of storage to use for this uploader:
   storage :file
@@ -28,11 +35,13 @@ class ImageUploader < CarrierWave::Uploader::Base
    #def scale(width, height)
 
   # end
-
+  process :resize_to_fit => [750,500]
+  process :auto_orient
   # Create different versions of your uploaded files:
-   #version :thumb do
-     #process resize_to_limit: [350, 260]
-   #end
+   version :thumb do
+     process :auto_orient
+     process :resize_to_fit => [350,260]
+   end
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
