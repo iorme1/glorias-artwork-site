@@ -7,6 +7,21 @@ class ImagesController < ApplicationController
     @image = Image.new
   end
 
+  def edit
+    @image = Image.find(params[:id])
+  end
+
+  def update
+    @image = Image.find(params[:id])
+
+    if @image.update(image_params)
+      redirect_to images_path
+      flash[:notice] = "Artwork successfully updated!"
+    else
+      flash[:alert] = "Image was not updated. Please try again."
+    end
+  end
+
   def create
     @image = Image.new(image_params)
 

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :images, only: [:index, :create, :destroy, :new]
+  resources :images, only: [:index, :create, :destroy, :new, :edit, :update]
 
   get 'fullcollections/index'
 

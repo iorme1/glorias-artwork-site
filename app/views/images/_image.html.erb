@@ -7,6 +7,7 @@
           <p><strong><%= image.title %> | <%= image.date %></strong></p>
           <% if current_user.email === "isorme1@gmail.com" %>
             <%= link_to "Remove", image_path(image), method: :delete, class: "btn btn-primary btn-sm" %>
+            <%= link_to "Edit", edit_image_path(image), class: "btn btn-info btn-sm" %>
           <% end %>
         </div>
       </div>
