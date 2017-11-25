@@ -2,7 +2,7 @@
     <% @images.each do |image| %>
     <div class="responsive">
       <div class="gallery">
-        <a href="<%=image.image_url%>"><%= image_tag image.image_url %></a>
+        <a class="img-responsive" href="<%=image.image_url%>"><%= image_tag image.image_url %></a>
         <div class="desc">
           <p><strong><%= image.title %> | <%= image.date %></strong></p>
           <% if current_user.email === "isorme1@gmail.com" || current_user.email = "ggorme@gmail.com" %>
