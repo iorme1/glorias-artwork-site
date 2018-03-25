@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="full-title">Gloria's Artwork Collection
       <% if current_user.email === "isorme1@gmail.com" || current_user.email === "ggorme@gmail.com" %>
-        <span style="margin-left:30px;"><%= link_to "Add Artwork", new_image_path, class: "btn btn-success" %></span>
+        <span style="margin-left:30px;"><%= link_to "Add Artwork", new_image_path, class: "btn btn-info" %></span>
       <% end %>
     </h1>
   </div>
