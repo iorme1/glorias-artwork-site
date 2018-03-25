@@ -1,7 +1,7 @@
 <% if @images.exists? %>
-  <div class="responsive">
-    <% @images.each do |image| %>
-      <%= link_to image_tag(image.image_url), image_path(image), class: "img-responsive" %>
-    <% end %>
+  <div class="img-gallery">
+      <% @images.each do |image| %>
+        <%= link_to image_tag(image.image_url, class: "thumb img-responsive"), image_path(image) %>
+      <% end %>
   </div>
 <% end %>

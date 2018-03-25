@@ -6,13 +6,13 @@
 .page-nav {
   margin: 0;
 }
-
+html {
+  min-height: 100%;
+}
 body {
   background: image-url("IMG_2251.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-body.images.index {
-  background-image:url('');
+  min-height: 100%;
+  overflow-x: hidden;
 }

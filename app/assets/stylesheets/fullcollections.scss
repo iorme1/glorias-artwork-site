@@ -3,8 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .background {
-  background-image:url('https://i.stack.imgur.com/p9mUO.jpg');
+  background-image: linear-gradient(white, grey, lightgrey);
   background-size: cover;
+  border-top: solid;
+  border-bottom: solid;
 }
 
 body.welcome.show {
@@ -21,12 +23,14 @@ body.fullcollections.index {
   background-image:url('');
 }
 body.images.show {
-  background-image:url('https://i.pinimg.com/736x/5a/34/5a/5a345acd4fee4191ceba8e4f2b3e0f13--abstract-art-paintings-modern-paintings.jpg');
+  background-image: linear-gradient(#000000,#434343);
 }
 body.images.index {
-  background-image:url('https://i.pinimg.com/736x/5a/34/5a/5a345acd4fee4191ceba8e4f2b3e0f13--abstract-art-paintings-modern-paintings.jpg');
+  background-image: linear-gradient(#000000,#434343);
+  background-size: contain;
 }
 
 .full-title {
-  color: white;
+  color: whitesmoke;
+  text-shadow: 1.5px 1.5px black;
 }
